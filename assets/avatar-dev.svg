@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B5F36B" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#1A281E" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#101411" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F2A21" />
+      <stop offset="100%" stop-color="#141C16" />
+    </linearGradient>
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#243327" />
+      <stop offset="100%" stop-color="#131B15" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5F785" />
+      <stop offset="100%" stop-color="#8CDA34" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="160" cy="160" r="150" fill="url(#bgGlow)" />
+  
+  <!-- Outer Tech Ring -->
+  <circle cx="160" cy="160" r="140" fill="none" stroke="#253528" stroke-width="2" stroke-dasharray="6 8" opacity="0.6"/>
+  <circle cx="160" cy="160" r="128" fill="#141B15" stroke="#2E4031" stroke-width="2"/>
+
+  <!-- Tech Hexagon Nodes -->
+  <g stroke="#B5F36B" stroke-width="1.5" opacity="0.4" fill="none">
+    <path d="M 60 100 L 80 80 L 110 80" />
+    <circle cx="110" cy="80" r="3" fill="#B5F36B" />
+    <path d="M 260 100 L 240 80 L 210 80" />
+    <circle cx="210" cy="80" r="3" fill="#B5F36B" />
+  </g>
+
+  <!-- Developer Silhouette / Graphic -->
+  <!-- Shoulders & Hoodie -->
+  <path d="M 85 270 C 85 220, 115 200, 160 200 C 205 200, 235 220, 235 270 Z" fill="url(#hoodieGrad)" stroke="#314534" stroke-width="2" />
+  <path d="M 140 205 L 160 245 L 180 205" fill="none" stroke="#B5F36B" stroke-width="2.5" opacity="0.8" />
+  <circle cx="160" cy="245" r="3.5" fill="#B5F36B" />
+
+  <!-- Head / Face -->
+  <rect x="120" y="105" width="80" height="92" rx="40" fill="#F4F2E9" />
+  
+  <!-- Stylish Modern Hair -->
+  <path d="M 116 128 C 114 90, 140 76, 168 76 C 196 76, 206 94, 204 122 C 195 110, 180 108, 165 110 C 150 112, 134 116, 116 128 Z" fill="#18221A" />
+  
+  <!-- Modern Glasses with Lime Neon Accent -->
+  <rect x="126" y="130" width="28" height="18" rx="5" fill="#141B15" stroke="#B5F36B" stroke-width="2.5" />
+  <rect x="166" y="130" width="28" height="18" rx="5" fill="#141B15" stroke="#B5F36B" stroke-width="2.5" />
+  <line x1="154" y1="139" x2="166" y2="139" stroke="#B5F36B" stroke-width="2.5" />
+  
+  <!-- Glasses Reflection -->
+  <line x1="130" y1="134" x2="142" y2="144" stroke="#F4F2E9" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="170" y1="134" x2="182" y2="144" stroke="#F4F2E9" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Friendly Smile -->
+  <path d="M 150 168 Q 160 176 170 168" fill="none" stroke="#1A241C" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Floating Badge: Code Tag -->
+  <g transform="translate(195, 195)">
+    <rect width="90" height="34" rx="10" fill="#18241B" stroke="#B5F36B" stroke-width="1.5" />
+    <text x="14" y="22" font-family="'Courier New', monospace" font-size="13" font-weight="bold" fill="#B5F36B">&lt;dev/&gt;</text>
+    <circle cx="74" cy="17" r="4" fill="#B5F36B" />
+  </g>
+
+  <!-- Floating Status Badge -->
+  <g transform="translate(35, 195)">
+    <rect width="84" height="34" rx="10" fill="#18241B" stroke="#374E3C" stroke-width="1.5" />
+    <circle cx="16" cy="17" r="4.5" fill="#B5F36B" />
+    <text x="28" y="22" font-family="sans-serif" font-size="11" font-weight="600" fill="#F4F2E9">Online</text>
+  </g>
+</svg>
